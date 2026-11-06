@@ -42,10 +42,3 @@ Une surface d'environ **30 × 30 cm** équipée de plusieurs magnétomètres tro
 - [ ] **Surface de détection :** construire une petite tuile magnétique, puis étudier son extension à une zone de lancer dédiée qui remplace la tablette et localise plusieurs dés. Comparer une surface magnétique seule à une éventuelle fusion avec des positions capacitives effectivement mesurées.
 - [ ] **Protocole de validation :** séparer apprentissage, réglage des seuils et test final ; conserver les refus ; rapporter les erreurs de face, de nombre de dés, d'association et de position par lancer complet. Tester bords, dés voisins, types mélangés et déplacement du fond magnétique.
 
-## Critère de réussite du prochain prototype
-
-Le premier jalon matériel est un D6 posé sans la main sur une petite tuile de magnétomètres. Le logiciel doit estimer **face et position sans recevoir la vraie position**, annoncer un refus lorsque le résultat est incertain et enregistrer les mesures brutes pour audit. La comparaison avec le Nexus utilisera les mêmes dés et les mêmes poses. Le nombre de capteurs requis pour couvrir 30 × 30 cm et le comportement avec plusieurs dés seront décidés à partir de ces mesures, pas des seuls résultats synthétiques.
-
-## Provenance
-
-Cette synthèse provient des audits locaux datés du 30 octobre 2026 : `bilan-des-magnetiques-20261030/empirique/lecture.md`, `bilan-des-magnetiques-20261030/simulation/methodologie.md`, `dossier-surface-magnetique-des-20261030/sources/preuves.md` et `dossier-surface-magnetique-des-20261030/sources/hardware.md`. Les captures complètes et les scripts d'analyse sont conservés séparément ; leur publication demandera un paquet reproductible débarrassé des chemins locaux et un contrôle des étiquettes.
