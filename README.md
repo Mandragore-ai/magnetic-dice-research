@@ -1,4 +1,4 @@
-# Reconnaissance de dés passifs par champ magnétique — état de recherche
+# Reconnaissance de dés passifs par champ magnétique
 
 **Mandragore.ai · 6 novembre 2026 · prototype de recherche**
 
