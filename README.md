@@ -10,7 +10,7 @@ L'utilisation d'un aimant à plusieurs avantages :
 - Pas de contact de la main au moment du résultat (comme les dés utilsant des fiducials
 - Très bon marché et facile à monter (une simple coque).
 
-Le prototype est un D6 imprimé en 3D avec un aimant fixe. Le magnétomètre d'un Nexus 5 mesure le champ quand le dé est immobilisé. Il utilise un entrainement (machine learning basique).
+Le prototype est un D6 imprimé en 3D (PLA, option PLA+ arretes TPU) avec un aimant fixe. Le magnétomètre d'un Nexus 5 mesure le champ quand le dé est immobilisé. Il utilise un entrainement (machine learning basique).
 Les fichiers sont fournis (stl, ban de test)
 
 Intérêt : transmettre les résultats du dés permet à des applications de connaitre les jets sans les reporter manuellement.
