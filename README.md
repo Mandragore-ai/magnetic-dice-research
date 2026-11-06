@@ -1,4 +1,10 @@
-# Reconnaissance de dés passifs par champ magnétique
+![Magnetic Dice — Mandragore.ai](magnetic-dice-logo.svg)
+
+# Reconnaissance de dés passifs par champ magnétique — état de recherche
+
+**[Mandragore.ai](https://mandragore.ai/) · [Maitresinh@500nuancesdegeek.fr](mailto:Maitresinh@500nuancesdegeek.fr)**
+
+Vous poursuivez ce travail ? Nous serions heureux de recueillir vos données expérimentales et vos améliorations : dé et aimant utilisés, géométrie, capteurs, protocole, mesures brutes, réussites, erreurs et refus. Écrivez-nous ou ouvrez une issue / pull request. Retirez les données personnelles et précisez les conditions de partage.
 
 **Mandragore.ai · 6 novembre 2026 · prototype de recherche**
 
@@ -7,13 +13,28 @@ Objectif : obtenir la donnée de lecture de dés physiques après un lancer.
 L'utilisation d'un aimant à plusieurs avantages : 
 
 - pas de batterie dans le dé, aucune  electronique
-- Pas de contact de la main au moment du résultat (comme les dés utilsant des fiducials
-- Très bon marché et facile à monter (une simple coque).
+- Pas de contact de la main au moment du résultat (contrairement aux marqueurs capacitifs tenus en main)
+- Très bon marché et facile à monter (deux coques).
 
 Le prototype est un D6 imprimé en 3D (PLA, option PLA+ arretes TPU) avec un aimant fixe. Le magnétomètre d'un Nexus 5 mesure le champ quand le dé est immobilisé. Il utilise un entrainement (machine learning basique).
-Les fichiers sont fournis (stl, ban de test)
+Les fichiers de fabrication et le banc d’essai sont fournis ci-dessous.
 
 Intérêt : transmettre les résultats du dés permet à des applications de connaitre les jets sans les reporter manuellement.
+
+## Fichiers du prototype D6
+
+![Vue éclatée des deux coques et du logement d’aimant](montage_D6_magnetique.png)
+
+- **Modèle imprimable :** [projet Bambu Studio 3MF](D6_aimant_deux_coques.3mf), limité au D6 magnétique.
+- **STL coque 1 :** [PLA](D6_coque_1_PLA_2.stl) et [TPU](D6_coque_1_TPU_AMS_1.stl).
+- **STL coque 2 :** [PLA](D6_coque_2_PLA_2.stl) et [TPU](D6_coque_2_TPU_AMS_1.stl).
+- **Banc d’essai magnétique :** [APK Android](magnetic-d6-bench-debug.apk) et [sources](magnetic-d6-bench-source.zip). Il lit le magnétomètre, apprend les six faces, teste à l’aveugle et exporte uniquement des mesures `dice_mag_*`. Aucun code capacitif n’y est inclus.
+
+Le 3MF conserve les matières et l’assemblage. Les quatre STL sont les volumes alignés des deux coques : importer les volumes d’une même coque ensemble, sans recentrage séparé, puis attribuer PLA et TPU. Immobiliser **un seul aimant néodyme axial Ø 5 × 2 mm** dans le logement avant de fermer les coques. Cette image est un dessin de montage, pas une photo du dé testé.
+
+### Construire et utiliser le banc
+
+Décompresser l’archive source. Prérequis : JDK 8, Android SDK 28, Gradle 4.10.1 et plugin Android 3.3.2 ; lancer `gradle assembleDebug`. L’APK autonome a compilé le 6 novembre 2026 mais n’a pas encore eu d’essai physique distinct. Immobiliser le téléphone et son câble, mesurer la référence sans aimant, puis apprendre au moins 12 orientations de chaque face en indiquant **le chiffre visible sur le dessus**. Retirer la main avant chaque mesure. Figer le modèle avant de tester de nouvelles poses et renseigner la vraie face après la prédiction. Ce banc suppose **un seul D6 et une zone fixe**.
 
 ## Ce qui a été mesuré
 
@@ -42,3 +63,6 @@ Une surface d'environ **30 × 30 cm** équipée de plusieurs magnétomètres tro
 - [ ] **Surface de détection :** construire une petite tuile magnétique, puis étudier son extension à une zone de lancer dédiée qui remplace la tablette et localise plusieurs dés. Comparer une surface magnétique seule à une éventuelle fusion avec des positions capacitives effectivement mesurées.
 - [ ] **Protocole de validation :** séparer apprentissage, réglage des seuils et test final ; conserver les refus ; rapporter les erreurs de face, de nombre de dés, d'association et de position par lancer complet. Tester bords, dés voisins, types mélangés et déplacement du fond magnétique.
 
+## Licence et citation
+
+Le texte, le logo, le dessin de montage, le 3MF et les STL sont sous [CC BY 4.0](LICENSE-HARDWARE.md). Le [code du banc](LICENSE-CODE.txt) est sous MIT. Dans les deux cas, citer **Mandragore.ai / 500 Nuances de Geek, « Magnetic Dice — reconnaissance de dés passifs », 2026**, avec [lien vers ce dépôt](https://github.com/Mandragore-ai/magnetic-dice-research) et indication des modifications. Voir [CITATION.cff](CITATION.cff). Les données et scripts de recherche non inclus ne sont pas couverts par cette publication.
