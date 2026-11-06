@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Si vous réutilisez ce prototype ou ses résultats, citez Mandragore.ai et ce dépôt."
+title: "Magnetic Dice — reconnaissance de dés passifs"
+type: software
+authors:
+  - name: "Mandragore.ai / 500 Nuances de Geek"
+date-released: 2026-11-06
+repository-code: "https://github.com/Mandragore-ai/magnetic-dice-research"
+url: "https://mandragore.ai/"
+abstract: "Prototype ouvert de D6 magnétique et banc Android de mesure, avec limites expérimentales. Plans et illustrations sous CC BY 4.0 ; code sous MIT."

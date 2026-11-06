@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Magnetic Dice</title>
+  <desc id="desc">Un dé stylisé traversé par des lignes de champ magnétique, signé Mandragore.ai.</desc>
+  <rect width="1200" height="320" rx="32" fill="#102329"/>
+  <g fill="none" stroke="#65d9bd" stroke-width="7" stroke-linecap="round" opacity=".8">
+    <path d="M31 70C78 42 119 50 149 86"/>
+    <path d="M25 123C66 100 105 106 140 130"/>
+    <path d="M25 177C67 194 102 190 140 171"/>
+    <path d="M38 228C81 252 118 244 149 211"/>
+  </g>
+  <g transform="translate(145 36)">
+    <path d="M91 0 180 48 180 150 91 202 0 150 0 48Z" fill="#f3c765" stroke="#f8e1a3" stroke-width="6"/>
+    <path d="M91 0V104L0 48M91 104l89-56M91 104v98" fill="none" stroke="#102329" stroke-width="5"/>
+    <circle cx="51" cy="48" r="9" fill="#102329"/>
+    <circle cx="130" cy="46" r="9" fill="#102329"/>
+    <circle cx="50" cy="133" r="9" fill="#102329"/>
+    <circle cx="92" cy="169" r="9" fill="#102329"/>
+    <circle cx="133" cy="133" r="9" fill="#102329"/>
+  </g>
+  <g fill="none" stroke="#65d9bd" stroke-width="7" stroke-linecap="round" opacity=".8">
+    <path d="M329 86c30-36 71-44 118-16"/>
+    <path d="M338 130c35-24 74-30 115-7"/>
+    <path d="M338 171c38 19 73 23 115 6"/>
+    <path d="M329 211c31 33 68 41 111 17"/>
+  </g>
+  <text x="500" y="154" fill="#f8f5e9" font-family="Arial,Helvetica,sans-serif" font-size="76" font-weight="700" letter-spacing="2">MAGNETIC DICE</text>
+  <text x="505" y="208" fill="#65d9bd" font-family="Arial,Helvetica,sans-serif" font-size="27" letter-spacing="5">OPEN RESEARCH  ·  MANDRAGORE.AI</text>
+</svg>
