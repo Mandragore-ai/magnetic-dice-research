@@ -4,6 +4,13 @@
 
 **[Mandragore.ai](https://mandragore.ai/) · [Maitresinh@500nuancesdegeek.fr](mailto:Maitresinh@500nuancesdegeek.fr)**
 
+**Licence commerciale :** les fichiers publiés jusqu'au 6 novembre 2026
+restent sous leurs licences MIT ou CC BY 4.0, y compris pour les personnes
+qui les ont déjà reçus. Les nouvelles contributions originales publiées à
+partir du 7 novembre sont destinées à l'usage non commercial, sauf licence
+particulière indiquée avec le fichier. Lire [la notice de transition](LICENSING-2026-11-07.md)
+avant toute réutilisation commerciale ; nous contacter pour un accord.
+
 Vous poursuivez ce travail ? Nous serions heureux de recueillir vos données expérimentales et vos améliorations : dé et aimant utilisés, géométrie, capteurs, protocole, mesures brutes, réussites, erreurs et refus. Écrivez-nous ou ouvrez une issue / pull request. Retirez les données personnelles et précisez les conditions de partage.
 
 **Mandragore.ai · 6 novembre 2026 · prototype de recherche**
